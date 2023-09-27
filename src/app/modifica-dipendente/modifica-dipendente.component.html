@@ -1,0 +1,72 @@
+
+<div class=" d-flex flex-column align-items-center justify-content-center w-100">
+    <h2 class="mb-5 mt-2">Modifica dipendente</h2>
+    <p>{{ dipendente.codiceFiscale }}</p>
+    <form class="d-flex flex-column" style="width: 30%;" (ngSubmit)="onSubmit()">
+
+        <!-- codice fiscale -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">Codice Fiscale</label>
+            <input type="text" name="codiceFiscale" id="codiceFiscale" class="form-control" disabled="disabled"
+            [(ngModel)]="dipendente.codiceFiscale">
+        </div>
+        <!-- nome -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">Nome</label>
+            <input type="text" name="nome" id="nome" class="form-control" required
+            [(ngModel)]="dipendente.nome">
+        </div>
+        <!-- Cognome -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">Cognome</label>
+            <input type="text" name="cognome" id="cognome" class="form-control" required
+            [(ngModel)]="dipendente.cognome">
+        </div>
+        <!-- email -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">Email Aziendale</label>
+            <input type="email" name="email" id="email" class="form-control" required
+            [(ngModel)]="dipendente.email">
+        </div>
+        <!-- data di nascita -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">Data di Nascita</label>
+            <input type="date" name="dataDiNascita" id="dataDiNascita" class="form-control" required
+            [(ngModel)]="dipendente.dataDiNascita">
+        </div>
+        <!-- luogo di nascita -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">Luogo di Nascita</label>
+            <input type="text" name="cittaNatale" id="cittaNatale" class="form-control" required
+            [(ngModel)]="dipendente.cittaNatale">
+        </div>
+        <!-- via di residenza -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">Via di Residenza</label>
+            <input type="text" name="indirizzo" id="indirizzo" class="form-control" required
+            [(ngModel)]="dipendente.indirizzo">
+        </div>
+        <!-- città di residenza -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">Città di Residenza</label>
+            <input type="text" name="cittaResidenza" id="cittaResidenza" class="form-control" required
+            [(ngModel)]="dipendente.cittaResidenza">
+        </div>
+        <!-- cap di residenza -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">CAP di Residenza</label>
+            <input type="text" name="cap" id="cap" class="form-control" required
+            [(ngModel)]="dipendente.cap">
+        </div>
+        <!-- recapito telefonico -->
+        <div class="form-group d-flex flex-row align-items-center mb-3">
+            <label for="codiceFiscale" style="width: 50%; text-align: right; margin-right: 2%;">Recapito Telefonico</label>
+            <input type="text" name="numeroTelefonico" id="numeroTelefonico" class="form-control" required
+            [(ngModel)]="dipendente.numeroTelefonico">
+        </div>
+
+        <button type="submit" class="btn btn-success" style="margin-left: auto; padding: 1% 7%;">MODIFICA</button>
+    </form>
+
+</div>
+
